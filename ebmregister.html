@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enantra 2.0</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <style type="text/css">
+    body{
+      background-image:url("/images/register.jpg");
+      width: 100%;
+      background-size: 100%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.9;
+    }
+    .form-1{
+        padding: 0px 0px 0px 0px;
+        background-color: transparent;
+      }
+
+      .form-1-head{
+        text-align: center;
+        font-weight: bolder;
+        font-family: 'Lato',serif;
+      }
+
+    .h4{
+      font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+     }
+     .bg{
+      /* background-attachment: fixed;  */
+      height:auto;
+      width: 100%;
+      background-size: 100%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.9;
+      margin-top: 70px;
+    }
+    label
+    {
+      font-family: 'Lato';
+      font-size: 14px;
+      font-weight: bolder;
+    }
+    .ptext{
+      position:absolute;
+      top:20%;
+      width:100%;
+      text-align:center;
+      color:black;
+      font-size:50px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      font-family:"Lato", sans-serif;
+      font-weight:600;
+    }
+    .ptext .border{
+      background-color:#111;
+      color:black;
+      padding:20px;
+    }
+    .ptext .border.trans{
+      background-color:transparent;
+    }
+    @media(max-width:568px){
+      .pimg1, .pimg2, .pimg3{
+        background-attachment:scroll;
+      }
+    }
+    .homepage-head{
+      padding-top:20px;
+    }
+    .registeration{
+      padding-top: 100px;
+      background-color: #1c2331;
+    }
+    .p1-about{
+      color: white;
+    }
+    .home-section{
+      padding-top: 20px;
+      padding-bottom: 0[x;]
+    }
+    .btn-primary
+    {
+      background-color: blue;
+      font-weight: bolder;
+    }
+  </style>
+  <script type="text/javascript">
+    function validate()
+    {   
+      var c=0;
+      x = document.register.eid.value;
+      if(x=="")
+      {
+        swal({
+            icon:"error",
+            title: "Enter the Enantra ID you received via mail"
+          });
+        return false;
+      }
+      else 
+        c++;
+      if(c==1)
+        {
+        swal("Welcome, Enantra Brand Manager","Please check your spam/inbox for further Details","success");
+        return true;
+      }
+
+    }
+  window.onload=function filldata()
+  {
+    var url_string = window.location.href;
+    console.log(url_string);
+    var pos = url_string.lastIndexOf('/');
+    var eid = url_string.substring(pos+1);
+    var id = document.getElementById('id1');
+    id.value = eid;
+    id.readOnly = true;
+    
+}
+
+  </script>
+</head>
+<body >
+
+    <!--START OF HOME-SECTION-->
+    <nav>
+    <div class="navbar-header" style="align-content: center;">
+        <a href="index.html" class="navbar-brand"><img src="/images/elogo.png" height="50px" width="200px" style="background-color: white;"></a>
+    </div>
+    </nav>
+
+    <div class="bg">
+            <div class="home-section">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+              <div class="form-1">
+                <div class="well well-lg">
+                <div class="col-md-12" style="background-color:#064789;color:white; ">
+                  <h4 class="form-1-head">EBM - ENANTRA 2.0</h4>
+                </div>
+                <div class="container-form">
+                  <form class="form-horizontal" action="http://localhost:3523/api/web/register/ebm" method="post" name="register">
+                <!--    <div class="form-group">
+                      <label for="text">Name</label>
+                        <input type="text" class="form-control" id="text" placeholder="Name" name="name" id="ex3">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Mobile Number</label>
+                      <input type="text" class="form-control" id="text" name="number" placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date of Birth</label>
+                        <input type="date" id="date" class="form-control" name="dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">College</label>
+                        <input type="text" class="form-control" id="text" name="college" placeholder="College">
+                    </div>
+                      <div class="form-group row">
+                         <label for="sel1" for="ex2">Year</label>
+                             <select class="form-control" id="sel1" id="ex2" name="year">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>Other</option>
+                             </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Do you need accomodation?</label>
+                          <br>
+                          <label class="radio-inline">
+                            <input type="radio" name="accomodation" value="1">Yes
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="accomodation" checked="checked" value="0">No
+                          </label>
+                      </div>-->
+                      <div class="form-group row">
+                         <label for="sel1" for="ex2">T-Shirt Size</label>
+                             <select class="form-control" id="sel1" id="ex2" name="t_shirt">
+                                  <option value="1">XS</option>
+                                  <option value="2">S</option>
+                                  <option value="3">L</option>
+                                  <option value="4">XL</option>
+                                  <option value="5">XXL</option>
+                             </select>
+                        </div>
+                      <div class="form-group" onload="filldata()">
+                        <label for="text">Enantra ID</label>
+                        <input type="text" class="form-control" id="id1" name="e_id" placeholder="Referral Code">
+                     </div>
+                    <div>
+                      <center><button type="submit" class="btn btn-primary" onclick="return validate()">SUBMIT</button></center>
+                    </div>
+                  </form>
+                </div>
+               </div>
+             </div>
+            </div>
+
+            </div>
+    </div>
+    <!--END OF HOME-SECTION-->
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "test": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "username": "root",
+    "password": "makesh1512",
+    "database": "enantra"
+  },
+  "prod": {
+  },
+  "port": 3523,
+  "referralPrefix": "E-",
+  "userPrefix": "EU-"
+}
