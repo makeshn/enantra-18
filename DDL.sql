@@ -43,4 +43,4 @@ Foreign Key(e_id) references users(e_id),
 Foreign Key(t_shirt) references tshirt(id) 
 );
 
-drop table ebm;
+

@@ -20,6 +20,7 @@
                 code : code,
                 stack : stack
             };
+//res.status(statusCode).json(data);
             res.sendFile(path.resolve(__dirname,'../error.html'));
         }
     };

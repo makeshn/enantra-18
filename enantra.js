@@ -19,7 +19,7 @@
     app.use('/',express.static(__dirname));
 
     var routes = require('./server/index')(app);
-    app.listen(config.port);
+    app.listen(process.env.PORT||config.port);
     process.on('SIGINT',function () {
         connection.end(function () {
             console.log("App terminated and DB closed");
