@@ -251,10 +251,16 @@ footer {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background:#1e1e1e;
+        background:#141414;
         padding: 0;
     }
-
+  }
+@media(max-width: 750px){
+    #toplogo
+    {
+      height:50px;
+      width :150px;
+    }
 }
 
 
@@ -263,7 +269,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/home1.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/home1.jpg') 50% 0 fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
