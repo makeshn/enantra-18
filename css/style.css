@@ -5,7 +5,20 @@ New Event
 http://www.templatemo.com/tm-486-new-event
 
 */
-
+/*
+For smoothscroll to work in chrome
+*/
+/* solution to smoothscroll
+html,body
+{
+  overflow: hidden; 
+  height:100%;
+}
+#site-wrapper
+{
+  overflow: auto;
+  height: 100%;
+}*/
 body {
 		background: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -33,6 +46,7 @@ h1 {
 h2 {
   font-size: 30px;
   text-transform: uppercase;
+  color:#141414;
 }
 
 h3 {
@@ -254,12 +268,20 @@ footer {
         background:#141414;
         padding: 0;
     }
+    #toplogo
+    {
+      -webkit-filter: brightness(130%);
+      filter:brightness(130%);
+      margin-top: 8px;
+    }
   }
 @media(max-width: 750px){
     #toplogo
     {
       height:50px;
       width :150px;
+      filter:brightness(130%);
+      -webkit-filter: brightness(130%);
     }
 }
 
@@ -269,7 +291,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/home1.jpg') 50% 0 fixed;
+    background: url('../images/home1.jpg') 50% 0 fixed no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -358,7 +380,7 @@ footer {
   margin-bottom: 0px;
 }
 
-events h6 {
+#events h6 {
   color: #666;
   margin-top: 4px;
 }
@@ -484,7 +506,7 @@ events h6 {
   margin-bottom: 0px;
 }
 
-mega_events h6 {
+#mega_events h6 {
   color: #666;
   margin-top: 4px;
 }
@@ -557,7 +579,7 @@ Speakers section
   margin-bottom: 0px;
 }
 
-workshop h6 {
+#workshop h6 {
   color: #666;
   margin-top: 4px;
 }
