@@ -3,7 +3,7 @@
 <container class="header">
   <row>
     <columns>
-      <h1 class="text-center" style="color:#064789;">Hi {{registername}}</h1>
+      <h1 class="text-center" style="color:#064789;">Hi {{registername}},</h1>
     </columns>
   </row>
 </container>
@@ -24,10 +24,10 @@
       <h4 style="color:#064789;">The unique EBM-ID assigned to you is <b>{{id}}</b>. This ID can be used as a referral code when your friends sign up for Enantra 2.0. </h4>
       <h4 style="color:#064789;">After an amazing first edition, we are back again to revamp the event this year with an aim to exceed expectations! We promise to provide you with the best entrepreneurial experience you have ever witnessed. </h4>
       <br>
-      <p>Being a brand manager requires you to represent ENANTRA. Our Marketing team will reach out to you soon. We hope you do a great job! Wishing you all the best! </p> 
-        <h4>February 8th 2018. Save the date.</h4>
+      <p style="color:#064789;">Being a brand manager requires you to represent ENANTRA. Our Marketing team will reach out to you soon. We hope you do a great job! Wishing you all the best! </p> 
+        <h4 style="color:#064789;">February 8th 2018. Save the date.</h4>
 <br>
-        <h3 style="text-align: left;"> TEAM ENANTRA </h3>
+        <h3 style="text-align: left;color:#064789;"> TEAM ENANTRA </h3>
     </columns>
   </row>
 

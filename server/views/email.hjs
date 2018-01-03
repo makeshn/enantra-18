@@ -3,7 +3,7 @@
 <container class="header">
   <row>
     <columns>
-      <h1 class="text-center" style="color:#064789;">Hi {{registername}}</h1>
+      <h1 class="text-center" style="color:#064789;">Hi {{registername}},</h1>
     </columns>
   </row>
 </container>

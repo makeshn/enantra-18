@@ -26,7 +26,8 @@
                 postData.year = body.year;
                 postData.accomodation = body.accomodation;
                 postData.referralcode = code;
-                postData.e_id = token;
+		postData.e_id = token;
+		postData.code = body.referralcode;
                 callback(null,postData);
             }
         });
