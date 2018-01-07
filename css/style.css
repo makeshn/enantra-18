@@ -265,7 +265,7 @@ footer {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background:#141414;
+        background:white;
         padding: 0;
     }
     #toplogo
@@ -341,13 +341,17 @@ footer {
   padding-bottom: 32px;
 }
 
+#overview {
+  font-size: 19px;
+}
+
 
 
 /*---------------------------------------
     Detail section              
 -----------------------------------------*/
 #detail {
-    background: #000666;
+    background:  #233E6A;
     color: #ffffff;
 }
 
