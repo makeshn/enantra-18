@@ -347,12 +347,12 @@ footer {
     Detail section              
 -----------------------------------------*/
 #detail {
-    background: #222;
+    background: #000666;
     color: #ffffff;
 }
 
 #detail .fa {
-  color: #233e6a;
+  color: white;
   font-size: 48px;
 }
 
