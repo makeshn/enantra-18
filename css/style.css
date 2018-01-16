@@ -20,10 +20,10 @@ html,body
   height: 100%;
 }*/
 body {
-		background: #ffffff;
+    background: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-		font-weight: 400;
+    font-weight: 400;
 }
 
 
@@ -209,6 +209,9 @@ footer {
 .custom-navbar {
     margin-bottom: 0;
     background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 
 .custom-navbar .navbar-brand {
@@ -251,6 +254,9 @@ footer {
 
 .custom-navbar .navbar-toggle {
     background-color: transparent;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
@@ -285,13 +291,58 @@ footer {
     }
 }
 
-
+/*---------------------------
+STICKY SOCIAL MEDIA LINKS
+---------------------------*/
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#233E6A;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:white;
+}
+.sticky li p a:hover{
+    font-weight: bolder;
+}
 
 /*---------------------------------------
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/home1.jpg') 50% 0 fixed no-repeat;
+    background: url('../images/home1.png') 50% 0 fixed no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -671,7 +722,7 @@ Speakers section
     Regsiter section              
 -----------------------------------------*/
 #register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/register.png') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -771,13 +822,11 @@ Speakers section
   content: "+";
 }
 
-
-
 /*---------------------------------------
    Venue section              
 -----------------------------------------*/
 #venue {
-    background: url('../images/ceg.jpg') 50% 0 repeat-y fixed; 
+    background: url('../images/ceg.png') 50% 0 repeat-y fixed; 
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
@@ -928,7 +977,7 @@ footer {
 
   .custom-navbar .nav li a {
     font-size: 11px;
-	line-height: 20px;
+  line-height: 20px;
   }
 
   #intro { height: 65vh; }
