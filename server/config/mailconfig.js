@@ -6,7 +6,7 @@
         service : "Gmail",
         auth : {
             user : "tech.capitalize@gmail.com",
-            pass : "technical"
+            pass : "technicale"
         }
     });
 
