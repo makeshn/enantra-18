@@ -1075,3 +1075,10 @@ MINI EVENT MODALS
 #speakers .btn-danger:hover{
  font-size:20px;
 }
+/* REGISTER BUTTONS */
+.btn-default
+{
+  background-color: #233E6A;
+  font-weight: bolder;
+  color:white;
+}
