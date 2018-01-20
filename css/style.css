@@ -337,6 +337,11 @@ STICKY SOCIAL MEDIA LINKS
 .sticky li p a:hover{
     font-weight: bolder;
 }
+.sticky #notif
+{
+  font-size: 10px;
+  color:white;
+}
 
 /*---------------------------------------
     Intro section              
@@ -620,7 +625,10 @@ Speakers section
     background: #ffffff;
     padding-bottom: 22px;
 }
-
+#speakers img[src="images/soon.png"]
+{
+  height:252px;
+}
 /*---------------------------------------
    Workshop section              
 -----------------------------------------*/
