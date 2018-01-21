@@ -290,7 +290,40 @@ footer {
       -webkit-filter: brightness(130%);
     }
 }
-
+.btn-group
+{
+  
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    left:0px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+button[class="btn btn-warning dropdown-toggle"]
+{
+  border-radius: 5px;
+}
+.dropdown-menu
+{
+  background-color: #233E6A;
+  color:white;
+  font-size: 10px;
+}
+@media(max-width: 750px)
+{
+  .btn-group
+  {
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    left:0px;
+    top:390px;
+    width:210px;
+    z-index: 1100;
+  }
+}
 /*---------------------------
 STICKY SOCIAL MEDIA LINKS
 ---------------------------*/
