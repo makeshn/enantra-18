@@ -99,7 +99,8 @@
     {   
       var c=0;
       var x = document.register.name.value;
-      if(x=="")
+      var regex = /^[a-zA-Z ]{2,30}$/;
+      if(!regex.test(x))
       {
         swal({
             icon:"error",
@@ -144,7 +145,7 @@
       else 
         c++;
       x = document.register.college.value;
-      if(x=="")
+      if(!regex.test(x))
       {
         swal({
             icon:"error",
@@ -166,8 +167,8 @@
 
     <!--START OF HOME-SECTION-->
     <nav>
-    <div class="navbar-header" style="align-content: center;">
-        <a href="index.html" class="navbar-brand"><img src="images/elogo.png" height="50px" width="200px"></a>
+    <div class="navbar-header">
+        <center><a href="index.html" class="navbar-brand"><img src="images/elogo.png" class="img-responsive" height="45px" width="170px"></a></center>
     </div>
     </nav>
 
