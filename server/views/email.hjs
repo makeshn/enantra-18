@@ -24,6 +24,9 @@
       <h4 style="color:#064789;">The unique ID assigned to you is <b>{{id}}</b>. The ID will contain all your relevant information. </h4>
       <h4 style="color:#064789;">After an amazing first edition, we are back again to revamp the event this year with an aim to exceed expectations! We promise to provide you with the best entrepreneurial experience you have ever witnessed. </h4>
       <br>
+      <h4 style="color:#233E6A;"> To complete the payment for general registrations click the link https://goo.gl/k7KMXA
+      </h4>
+      <br>
       <h4 style="color:#064789;"> To become an Enantra Brand Manager, click the link http://enantra.org/registerEBM/{{id}}</h4>
       <h4 style="color:#064789;">Come join us on February 8th to explore the entrepreneur in you!</h4>
     </columns>
