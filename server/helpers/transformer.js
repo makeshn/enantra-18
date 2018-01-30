@@ -28,6 +28,8 @@
                 postData.referralcode = code;
 		postData.e_id = token;
 		postData.code = body.referralcode;
+		postData.degree = body.degree;
+		postData.dept = body.dept;
                 callback(null,postData);
             }
         });
