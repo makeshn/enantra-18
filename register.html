@@ -155,7 +155,29 @@
       }
       else 
         c++;
-      if(c==5)
+      x = document.register.degree.value;
+      if(x=="")
+      {
+        swal({
+            icon:"error",
+            title: "Enter Your Degree"
+          });
+        return false;
+      }
+      else 
+        c++;
+      x = document.register.dept.value;
+      if(x=="")
+      {
+        swal({
+            icon:"error",
+            title: "Enter Your Department Name"
+          });
+        return false;
+      }
+      else 
+        c++;
+      if(c==7)
         {
         swal("Welcome to Enantra 2.0","Please check your spam/inbox for further Details","success");
         return true;
@@ -217,6 +239,14 @@
                     <div class="form-group">
                         <label for="text">College</label>
                         <input type="text" class="form-control" id="text" name="college" placeholder="College">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Degree</label>
+                        <input type="text" class="form-control" id="text" name="degree" placeholder="B.E./B.Tech/B.Sc. etc." maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Specialization</label>
+                        <input type="text" class="form-control" id="text" name="dept" placeholder="Field of Study" maxlength="100">
                     </div>
                       <div class="form-group row">
                          <label for="sel1" for="ex2">Year</label>
