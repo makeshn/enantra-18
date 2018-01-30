@@ -11,6 +11,26 @@
 
       gtag('config', 'UA-112016698-1');
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '690735181101310'); 
+    fbq('track', 'PageView');
+    fbq('track', 'CompleteRegistration');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=690735181101310&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
   <title>Register for Enantra</title>
   <meta charset="utf-8">
@@ -124,7 +144,9 @@
       else
         c++;
       x = document.register.number.value;
-      if(x.length<10)
+      var num= /^[789]\d{9}$/;
+      var nummatch = x.match(num);
+      if(nummatch==null)
       {
         swal({
             icon:"error",
@@ -206,8 +228,8 @@
               <br>
               <li> <b>P.G. students</b> should select the option <b>OTHER</b> in the <b>Year</b> Field.</li>
               <li> Please enter your <b>Email ID</b> correctly. </li>
-              <li> After a successful Registration, you will receive an email via the one you registered, which will contain your unique <b>Enantra ID</b> along with a <b>Link</b> for EBM Registration.</li>
-              <li>Registration for Enantra is <b>MANDATORY</b> before Registering for the <b>EBM Program</b></li>
+              <li> After a successful Registration, you will receive an email via the one you registered, which will contain your unique <b>Enantra ID</b> along with a link for completing your payment for <b>General Registrations.</b></li>
+              <li><b>The Enantra Brand Manager(EBM) Program Registrations are officially over for the year of 2018.</b></li>
               <li> To Return to the HomePage, Click on the <b>Logo</b> at the top.</li>
               </ul>
             </div>

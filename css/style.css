@@ -380,7 +380,7 @@ STICKY SOCIAL MEDIA LINKS
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/home1.png') 50% 0 fixed no-repeat;
+    background: url('../images/home2.jpeg') 50% 0 fixed no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -481,6 +481,7 @@ STICKY SOCIAL MEDIA LINKS
   width: 100%;
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 #events .col-md-3 {
@@ -607,6 +608,7 @@ STICKY SOCIAL MEDIA LINKS
   width: 100%;
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 #mega_events .col-md-3 {
@@ -644,6 +646,7 @@ Speakers section
   width: 100%;
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 #speakers .col-md-3 {
@@ -683,6 +686,7 @@ Speakers section
   width: 100%;
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 #workshop .col-md-3 {
@@ -807,6 +811,7 @@ Speakers section
   background: #f9f9f9;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  cursor: pointer;
 }
 
 #faq .panel-group {
@@ -1081,6 +1086,13 @@ footer {
     height: 100vh;
   }
 
+}
+/*---Footer---*/
+h5
+{
+  color: #233E6A;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 /*---------------------------
